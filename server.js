@@ -24,7 +24,7 @@ function getImagesByCategory(dirPath, baseURL = 'imgs') {
       const category = path.join(baseURL, entry.name);
       const subResult = getImagesByCategory(fullPath, category);
       Object.assign(result, subResult);
-    } else if (/\.(jpg|jpeg|png|gif|webp)$/i.test(entry.name)) {
+    } else if (/\.(jpg|jpeg|png|gif|webp|bmp)$/i.test(entry.name)) {
       const category = baseURL;
       if (!result[category]) result[category] = [];
       result[category].push(relativePath.replace(/\\/g, '/')); // Windows対策
