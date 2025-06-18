@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.controls {
+  margin-bottom: 20px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /*margin-bottom: 30px;*/
+}
+.gallery img {
+  display: block;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+.category-section {
+  display: none;
+}
+.category-section.active {
+  display: block;
+}
+.category-title {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

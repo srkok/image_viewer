@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>カテゴリ別画像ギャラリー</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <h1>カテゴリ別画像ギャラリー</h1>
+
+    <div class="controls">
+      <div>
+        表示順序：
+        <select id="orderSelect">
+          <option value="random">ランダム</option>
+          <option value="alphabet">アルファベット順</option>
+        </select>
+      </div>
+
+      <label>
+        画像サイズ（px）:
+        <input
+          type="number"
+          id="imageSizeInput"
+          value="340"
+          min="50"
+          max="1000"
+          step="10"
+        />
+      </label>
+
+      <label style="margin-left: 20px">
+        カテゴリ検索:
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="カテゴリ名でフィルタ..."
+        />
+      </label>
+    </div>
+
+    <div id="categoryFilter"></div>
+    <hr />
+    <div id="galleries">読み込み中...</div>
+  </body>
+</html>
